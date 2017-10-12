@@ -163,7 +163,7 @@ export default makeExecutableSchema({
 });
 ```
 
-If you're exporting array of schema strings and there are circular dependencies, the array can be wrapped in a function. The `makeExecutableSchema` function will only include each type definition once, even if it is imported multiple times by different types, so you don't have to worry about deduplicating the strings.
+If you're exporting an array of schema strings and there are circular dependencies, the array can be wrapped in a function. The `makeExecutableSchema` function will only include each type definition once, even if it is imported multiple times by different types, so you don't have to worry about deduplicating the strings.
 
 ```js
 // author.js
